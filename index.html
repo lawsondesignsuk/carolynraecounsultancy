@@ -172,24 +172,25 @@
         <div class="form-wrapper">
           <h2>Make an Appointment</h2>
           <p>Book a session easily online. Just fill out the form and I’ll be in touch soon.</p>
-          <form action="https://formspree.io/f/xjkrvnja" method="POST">
-           <div class="form-row">
-              <input type="text" placeholder="Your Name" required />
-              <input type="email" placeholder="Email Address" required />
-            </div>
-            <div class="form-row">
-              <input type="text" placeholder="Subject" />
-              <input type="tel" placeholder="Phone Number" />
-            </div>
-            <div class="form-row">
-              <input type="date" required />
-              <input type="time" required />
-            </div>
-            <div class="form-row full">
-              <textarea placeholder="Your Message" rows="4"></textarea>
-            </div>
-            <button type="submit">Send Appointment Request</button>
-          </form>
+<form action="https://formspree.io/f/xjkrvnja" method="POST">
+  <div class="form-row">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Email Address" required />
+  </div>
+  <div class="form-row">
+    <input type="text" name="subject" placeholder="Subject" />
+    <input type="tel" name="phone" placeholder="Phone Number" />
+  </div>
+  <div class="form-row">
+    <input type="date" name="preferred_date" required />
+    <input type="time" name="preferred_time" required />
+  </div>
+  <div class="form-row full">
+    <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+  </div>
+
+  <button type="submit">Send Appointment Request</button>
+</form>
         </div>
         <section id="accreditation">
             <div class="accreditation-wrapper">
