@@ -100,20 +100,26 @@
 
       <div class="contact-form">
         <h2>Book An Appointment</h2>
-        <form action="https://formsubmit.co/carolynraeconsultancy@gmail.com" method="POST" />
-        <div class="form-group">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Email Address" required />
-          </div>
-          <div class="form-group">
-            <input type="text" name="subject" placeholder="Subject" />
-            <input type="tel" name="phone" placeholder="Phone Number" />
-          </div>
-          <div class="form-group full">
-            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-          </div>
-          <button type="submit">Send Message</button>
-        </form>
+<form action="https://formspree.io/f/xjkrvnja" method="POST">
+  <div class="form-group">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Email Address" required />
+  </div>
+
+  <div class="form-group">
+    <input type="text" name="subject" placeholder="Subject" />
+    <input type="tel" name="phone" placeholder="Phone Number" />
+  </div>
+
+  <div class="form-group full">
+    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+  </div>
+
+  <input type="hidden" name="_subject" value="New Contact Form Submission from Website">
+
+  <button type="submit">Send Message</button>
+</form>
+
       </div>
 
     </div>
