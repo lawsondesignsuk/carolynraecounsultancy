@@ -10,12 +10,12 @@
         <meta name="keywords" content="contact counselling, online counselling contact, Carolyn Rae therapy, supervision contact, therapist enquiry" />
         <meta name="author" content="Carolyn Rae Consultancy" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.carolynraeconsultancy.com/contact" />
+        <link rel="canonical" href="contact.html" />
       
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+        <link rel="manifest" href="site.webmanifest" />
       
         <meta property="og:title" content="Contact Carolyn Rae Consultancy" />
         <meta property="og:description" content="Reach out to discuss online counselling or supervision services. Carolyn Rae offers professional, accredited support via Zoom." />
@@ -54,14 +54,14 @@
 
   <header class="header">
     <div class="logo">
-      <a href="/"><img src="images/logo.webp" alt="The Roots of You Logo - Reiki and Massage Therapy" /></a>
+      <a href="index.html"><img src="images/logo.webp" alt="Carolyn Rae Consultancy logo" /></a>
     </div>
     <nav class="nav">
       <ul class="nav-list">
-        <li><a href="/">Home</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/young-people-counselling">Young People Counselling</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="young-people-counselling.html">Young People Counselling</a></li>
       </ul>
     </nav>
     <div class="hamburger" id="hamburger" aria-label="Open menu">
@@ -72,50 +72,92 @@
   <div class="mobile-menu" id="mobileMenu">
     <button class="close-btn" id="closeMenu" aria-label="Close menu">&times;</button>
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/services">Services</a></li>
-      <li><a href="/contact">Contact</a></li>
-      <li><a href="/young-people-counselling">Young People Counselling</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="young-people-counselling.html">Young People Counselling</a></li>
     </ul>
   </div>
 
   <section id="contact-hero">
     <div class="contact-hero-content">
+      <p class="young-eyebrow">Get in Touch</p>
       <h1>Contact Carolyn Rae</h1>
       <p>Reach out today to arrange a free initial consultation, ask a question, or make a booking.</p>
     </div>
   </section>
 
   <section id="contact-section">
+    <div class="section-shell contact-shell">
+      <h2>Let’s Talk About the Right Support for You</h2>
+      <p class="section-intro">If you are unsure where to begin, you can share a short summary of what you are looking for and we can identify the most suitable next step together.</p>
+    </div>
     <div class="contact-wrapper">
       
       <div class="contact-info">
         <h2>Contact Details</h2>
-        <p><strong>📞 Phone:</strong> <a href="tel:07516859531">07516 859531</a></p>
-        <p><strong>📧 Email:</strong> <a href="mailto:carolynraeconsultancy@gmail.com">carolynraeconsultancy@gmail.com</a></p>
-        <p><strong>🌐 Sessions:</strong> All appointments are held online via Zoom.</p>
-        <p><strong>🕐 Availability:</strong> Monday–Friday, 9am–6pm</p>
+        <p><strong>Phone:</strong> <a href="tel:07516859531">07516 859531</a></p>
+        <p><strong>Email:</strong> <a href="mailto:carolynraeconsultancy@gmail.com">carolynraeconsultancy@gmail.com</a></p>
+        <p><strong>Sessions:</strong> All appointments are held online via Zoom.</p>
+        <p><strong>Availability:</strong> Monday-Friday, 9am-6pm</p>
+        <div class="contact-quick-notes">
+          <p>Initial consultations are offered free of charge.</p>
+          <p>If you are unsure what service is right for you, simply share a little about what support you are looking for.</p>
+        </div>
       </div>
 
       <div class="contact-form">
         <h2>Book An Appointment</h2>
-<form action="https://formspree.io/f/xjkrvnja" method="POST">
+<form action="https://formspree.io/f/xjkrvnja" method="POST" class="booking-form">
   <div class="form-group">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Email Address" required />
+    <div class="form-field">
+      <label for="contact-name">Full Name</label>
+      <input id="contact-name" type="text" name="name" placeholder="Your Name" required />
+    </div>
+    <div class="form-field">
+      <label for="contact-email">Email Address</label>
+      <input id="contact-email" type="email" name="email" placeholder="Email Address" required />
+    </div>
   </div>
 
   <div class="form-group">
-    <input type="text" name="subject" placeholder="Subject" />
-    <input type="tel" name="phone" placeholder="Phone Number" />
+    <div class="form-field">
+      <label for="contact-phone">Phone Number</label>
+      <input id="contact-phone" type="tel" name="phone" placeholder="Phone Number" />
+    </div>
+    <div class="form-field">
+      <label for="contact-service">Service Needed</label>
+      <select id="contact-service" name="service">
+        <option value="">Select a service</option>
+        <option value="Adult Counselling">Adult Counselling</option>
+        <option value="Couples Counselling">Couples Counselling</option>
+        <option value="Clinical Supervision">Clinical Supervision</option>
+        <option value="Young People Counselling">Young People Counselling</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="form-field">
+      <label for="contact-date">Preferred Date</label>
+      <input id="contact-date" type="date" name="preferred_date" />
+    </div>
+    <div class="form-field">
+      <label for="contact-time">Preferred Time</label>
+      <input id="contact-time" type="time" name="preferred_time" />
+    </div>
   </div>
 
   <div class="form-group full">
-    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+    <div class="form-field">
+      <label for="contact-message">How can I help?</label>
+      <textarea id="contact-message" name="message" rows="6" placeholder="Please share a brief message about what support you are looking for" required></textarea>
+    </div>
   </div>
 
   <input type="hidden" name="_subject" value="New Contact Form Submission from Website">
 
+  <p class="form-note">Your message is confidential and will be responded to promptly.</p>
   <button type="submit">Send Message</button>
 </form>
 
@@ -132,15 +174,15 @@
       <div class="footer-links">
         <h4>Pages</h4>
         <ul>
-          <li><a href="https://www.carolynraeconsultancy.com/">Home</a></li>
-          <li><a href="https://www.carolynraeconsultancy.com/services">Services</a></li>
-          <li><a href="https://www.carolynraeconsultancy.com/contact">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-contact">
         <h4>Contact</h4>
-        <p>📞 <a href="tel:07516859531">07516 859531</a></p>
-        <p>📧 <a href="mailto:carolynraeconsultancy@gmail.com">carolynraeconsultancy@gmail.com</a></p>
+        <p>Phone: <a href="tel:07516859531">07516 859531</a></p>
+        <p>Email: <a href="mailto:carolynraeconsultancy@gmail.com">carolynraeconsultancy@gmail.com</a></p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -149,30 +191,18 @@
     </div>
   </footer>
 
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const closeMenu = document.getElementById('closeMenu');
-    const overlay = document.getElementById('overlay');
+  <div class="cta-popup-backdrop" id="ctaPopupBackdrop"></div>
+  <aside class="cta-popup" id="ctaPopup" aria-live="polite" aria-label="Book a consultation">
+    <button class="close-popup" id="closePopup" aria-label="Close call to action">&times;</button>
+    <h3>Free Initial Consultation</h3>
+    <p>A short first conversation can help you decide what support feels right.</p>
+    <div class="cta-popup-actions">
+      <a href="contact.html" class="hero-btn">Book Your Consultation</a>
+      <button type="button" class="secondary-btn" id="dismissPopup">Not Now</button>
+    </div>
+  </aside>
 
-    hamburger.addEventListener('click', () => {
-      mobileMenu.classList.add('open');
-      overlay.classList.add('show');
-      document.body.style.overflow = 'hidden';
-    });
-
-    closeMenu.addEventListener('click', () => {
-      mobileMenu.classList.remove('open');
-      overlay.classList.remove('show');
-      document.body.style.overflow = 'auto';
-    });
-
-    overlay.addEventListener('click', () => {
-      mobileMenu.classList.remove('open');
-      overlay.classList.remove('show');
-      document.body.style.overflow = 'auto';
-    });
-    </script>
+  <script src="script.js"></script>
 
 </body>
 </html>
