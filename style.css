@@ -438,6 +438,20 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 0.85rem;
+}
+
+.about-me-text h2 {
+  margin-top: 0.15rem;
+}
+
+.about-me-text p {
+  max-width: 58ch;
+}
+
+.about-me-text .hero-btn {
+  align-self: flex-start;
+  margin-top: var(--space-2);
 }
 
 .prefix {
@@ -623,6 +637,12 @@ textarea:focus {
   text-align: center;
   background: linear-gradient(145deg, #1c2c3f 0%, #2d445f 100%);
   color: #fff;
+}
+
+#cta.room-cta {
+  background:
+    linear-gradient(rgba(29, 47, 67, 0.72), rgba(29, 47, 67, 0.72)),
+    url('images/counselling-room.webp') left center/cover no-repeat;
 }
 
 #cta .container {
@@ -1177,7 +1197,8 @@ textarea:focus {
   transform: translate(-50%, 22px);
   width: min(92vw, 440px);
   background:
-    radial-gradient(circle at 12% 14%, rgba(201, 165, 116, 0.2), transparent 34%),
+    radial-gradient(circle at 12% 14%, rgba(201, 165, 116, 0.18), transparent 34%),
+    linear-gradient(180deg, rgba(244, 236, 224, 0.88), rgba(255, 255, 255, 0.98) 36%),
     #fff;
   border-radius: var(--radius-md);
   border: 1px solid rgba(198, 177, 147, 0.72);
@@ -1203,6 +1224,7 @@ textarea:focus {
   font-size: 1.7rem;
   margin-bottom: 0.45rem;
   color: #1d2f43;
+  max-width: 18ch;
 }
 
 .cta-popup p {
