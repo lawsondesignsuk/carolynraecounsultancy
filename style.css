@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
-
 :root {
   --bg: #f7f4ef;
   --bg-soft: #f1ece4;
   --surface: #ffffff;
   --text: #213244;
   --text-muted: #556476;
-  --brand: #c9a574;
-  --brand-deep: #b58e59;
+  --brand: #9a6f39;
+  --brand-deep: #7d5627;
   --brand-soft: #eadcc8;
   --border: #dfd5c8;
   --shadow-soft: 0 10px 30px rgba(28, 44, 63, 0.08);
@@ -148,6 +146,9 @@ main section {
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
+  border: 0;
+  background: transparent;
+  padding: 0;
 }
 
 .hamburger span {
@@ -1141,8 +1142,8 @@ textarea:focus {
   border-radius: 50%;
 }
 
-.footer-links h4,
-.footer-contact h4 {
+.footer-links h3,
+.footer-contact h3 {
   margin-bottom: 0.7rem;
   color: #f1d8b4;
   font-family: 'Manrope', sans-serif;

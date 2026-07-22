@@ -18,6 +18,7 @@
     hamburger.addEventListener('click', function () {
       mobileMenu.classList.add('open');
       body.classList.add('menu-open');
+      hamburger.setAttribute('aria-expanded', 'true');
     });
   }
 
@@ -25,6 +26,9 @@
     closeMenu.addEventListener('click', function () {
       mobileMenu.classList.remove('open');
       body.classList.remove('menu-open');
+      if (hamburger) {
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
     });
   }
 
@@ -33,6 +37,9 @@
       link.addEventListener('click', function () {
         mobileMenu.classList.remove('open');
         body.classList.remove('menu-open');
+        if (hamburger) {
+          hamburger.setAttribute('aria-expanded', 'false');
+        }
       });
     });
   }
